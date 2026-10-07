@@ -1,11 +1,13 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 
-import { LandingPage } from "@features";
+import { MainPage } from "@features";
+
+import "@styles";
 
 const root = document.getElementById("root");
 createRoot(root!).render(
   <StrictMode>
-    <LandingPage />
+    <MainPage />
   </StrictMode>
 );

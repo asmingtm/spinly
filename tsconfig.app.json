@@ -26,6 +26,7 @@
     "paths": {
       "@features": ["./src/features/"],
       
+      "@styles": ["./src/shared/styles/"],
       "@components": ["./src/shared/components/"],
       "@utils": ["./src/shared/utils/"],
     }
