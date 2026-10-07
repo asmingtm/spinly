@@ -2,6 +2,8 @@ import { useState } from "react";
 import { polarToCartesian } from "./SpinnerWheel.utils";
 import { randomColor } from "@utils";
 
+import { FaHandPointDown } from "react-icons/fa";
+
 import "./SpinnerWheel.css";
 
 const content = ["opt", "opt", "opt", "opt", "opt", "opt", "opt", "opt", "opt", "opt", "opt", "opt", "opt", "opt", "opt"];
@@ -24,7 +26,7 @@ export function SpinnerWheel() {
     return (
         <div className="spinner">
             <div className="spinner__pointer">
-
+                <FaHandPointDown />
             </div>
 
             <svg

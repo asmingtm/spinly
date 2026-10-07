@@ -1,11 +1,10 @@
 import { SpinnerWheel } from "@components";
+import "./page.css";
 
-export function LandingPage() {
+export function MainPage() {
     return (
-        <main className="page-landing">
-            <header>
-                <h1>Spinly</h1>
-            </header>
+        <main className="page-main">
+            <header>SPINLY</header>
             <section>
                 <SpinnerWheel />
             </section>

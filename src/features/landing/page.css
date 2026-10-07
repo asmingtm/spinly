@@ -1,0 +1,40 @@
+.page-main{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    height: 100%;
+}
+
+header{
+    font-size: 1.2em;
+    font-family: monospace;
+    color: hsl(0, 0%, 70%);
+    background: hsl(0, 0%, 2%);
+    border-radius: 8px;
+
+    padding: 0.6em 1em;
+    margin-bottom: 2em;
+}
+
+button{
+    cursor: pointer;
+
+    font-size: 1.1em;
+    margin-top: 2em;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    padding: 0.6em 1em;
+    background: hsl(240, 80%, 40%);
+
+    transition: all 100ms;
+}
+button:hover{
+    opacity: 0.8;
+}
+button:active{
+    scale: 0.98;
+}
