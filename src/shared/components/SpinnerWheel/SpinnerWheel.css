@@ -1,0 +1,27 @@
+.spinner {
+    position: relative;
+    width: 300px;
+}
+
+.spinner__wheel {
+    width: 100%;
+    transition: transform 5s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.spinner__pointer {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    z-index: 1;
+    transform: translateX(-50%);
+}
+
+.spinner__label {
+    font-size: 5px;
+    text-anchor: middle;
+    dominant-baseline: middle;
+
+    fill: white;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
