@@ -1,3 +1,4 @@
-import { MainPage } from "./landing/page";
+import { MainPage } from "./main/page";
+import { LegalPage } from "./legal/page";
 
-export { MainPage }
+export { MainPage, LegalPage }

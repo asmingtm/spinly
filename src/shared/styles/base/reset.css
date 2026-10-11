@@ -1,17 +1,15 @@
 *{
+    font-family: 'Fira Code', Arial, Helvetica, sans-serif;
+
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
 body{
-    background: hsl(0, 0%, 0%);
-}
-
-body, #root{
+    background: var(--clr-bgd);
     height: 100dvh;
 }
-
-:root{
-    color-scheme: dark;
+#root{
+    height: 100%;
 }

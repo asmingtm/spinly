@@ -1,3 +1,5 @@
-import { randomColor } from "./random.utils";
+import { randomHSL, resolveParam, randomInt} from "./random.utils";
 
-export { randomColor }
+export {
+    randomHSL, resolveParam, randomInt
+}
