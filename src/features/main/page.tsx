@@ -1,0 +1,13 @@
+import { PageHeader } from "@components";
+import { SpinnerWheel, ActionsSection, InputSection } from "./components";
+
+export function MainPage() {
+    return (
+        <main className="page-main">
+            <PageHeader label="Spinly" />
+            <SpinnerWheel />
+            <ActionsSection />
+            <InputSection />
+        </main>
+    );
+}

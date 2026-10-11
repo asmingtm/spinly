@@ -1,0 +1,18 @@
+:root{
+    color-scheme: dark;
+
+    --clr-bgd: hsl(0, 0%, 0%);
+
+    --clr-solid: hsl(0, 0%, 8%);
+    --clr-solid-raised: hsl(0, 0%, 16%);
+    --clr-solid-reduced: hsl(0, 0%, 4%);
+
+    --clr-primary: hsl(240, 64%, 40%);
+    --clr-primary-raised: hsl(240, 64%, 60%);
+
+    --clr-accent: hsl(240, 64%, 25%);
+    --clr-accent-reduced: hsl(240, 64%, 10%);
+
+    --bdr-radius: 12px;
+    --bdr-thickness: 1px;
+}

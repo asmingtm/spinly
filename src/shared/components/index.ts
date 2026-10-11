@@ -1,3 +1,3 @@
-import { SpinnerWheel } from "./SpinnerWheel/SpinnerWheel";
+import { PageHeader } from "./PageHeader/PageHeader";
 
-export { SpinnerWheel }
+export { PageHeader }

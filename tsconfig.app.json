@@ -24,6 +24,9 @@
 
     /* Paths */
     "paths": {
+      "@providers": ["./src/app/providers/"],
+      "@routes": ["./src/app/routes/"],
+
       "@features": ["./src/features/"],
       
       "@styles": ["./src/shared/styles/"],

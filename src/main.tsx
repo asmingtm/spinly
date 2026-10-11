@@ -1,13 +1,14 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 
-import { MainPage } from "@features";
+import { RouterProvider } from "react-router";
 
 import "@styles";
+import { routes } from "@routes";
 
 const root = document.getElementById("root");
 createRoot(root!).render(
   <StrictMode>
-    <MainPage />
+    <RouterProvider router={routes} />
   </StrictMode>
 );
