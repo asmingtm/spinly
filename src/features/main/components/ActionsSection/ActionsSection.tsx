@@ -1,10 +1,11 @@
-import styles from "./ActionsSection.module.css"
+import { MdSettings } from "react-icons/md";
+import styles from "./ActionsSection.module.css";
 
 export function ActionsSection() {
     return (
         <section className={styles.actions}>
             <button className="btn btn-solid">
-                History
+                <MdSettings />
             </button>
             <button className="btn btn-primary">
                 Spin

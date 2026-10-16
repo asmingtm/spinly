@@ -1,5 +1,5 @@
 import { PageHeader } from "@components";
-import { SpinnerWheel, ActionsSection, InputSection } from "./components";
+import { SpinnerWheel, ActionsSection, InputSection, OptionEditorModal } from "./components";
 import "./styles/page.css";
 
 export function MainPage() {
@@ -9,6 +9,7 @@ export function MainPage() {
             <SpinnerWheel />
             <ActionsSection />
             <InputSection />
+            <OptionEditorModal />
         </main>
     );
 }

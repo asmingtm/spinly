@@ -1,10 +1,15 @@
 .btn{
     --rotate: 0deg;
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+
     cursor: pointer;
     font-size: 1em;
     padding: 0.8em 1em;
-    min-width: 200px;
     border-radius: var(--bdr-radius);
     border: none;
     transition: all var(--ani-delay);
@@ -35,4 +40,13 @@
 
 .btn-solid:hover{
     background: var(--clr-solid-raised);
+}
+
+.btn > svg{
+    font-size: 1.4em;
+    color: var(--clr-summary);
+}
+
+.btn:has(svg){
+    width: fit-content;
 }

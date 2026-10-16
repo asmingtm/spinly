@@ -14,7 +14,7 @@
     .page-main{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto auto;
+        grid-template-rows: 2em auto auto;
         grid-template-areas:
         "title title"
         "wheel actions"

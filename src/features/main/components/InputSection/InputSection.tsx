@@ -1,6 +1,6 @@
 import { use } from "react";
 import { OptionsContext } from "@contexts";
-import { MdDragIndicator, MdDelete, MdAdd } from "react-icons/md";
+import { MdDragIndicator, MdDelete, MdAdd, MdEdit } from "react-icons/md";
 import styles from "./InputSection.module.css";
 
 export function InputSection() {
@@ -15,6 +15,9 @@ export function InputSection() {
     }
     function addOption(){
         return;
+    }
+    function openOptionEditor(id: string){
+        return id;
     }
 
     return (
@@ -35,6 +38,13 @@ export function InputSection() {
                             className={styles.content}
                             onChange={(e) => updateContent(opt.id, e.target.value)}
                         />
+                        <button
+                            className={styles.edit}
+                            aria-label={`Delete option ${index + 1}`}
+                            onClick={() => openOptionEditor(opt.id)}
+                        >
+                            <MdEdit />
+                        </button>
                         <button
                             className={styles.delete}
                             aria-label={`Delete option ${index + 1}`}

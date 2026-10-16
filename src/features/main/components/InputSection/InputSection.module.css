@@ -37,7 +37,7 @@
     transition: all var(--ani-delay);
 }
 
-.content, .drag, .delete, .add {
+.content, .drag, .delete, .add, .edit {
     border: none;
     outline: none;
     background: transparent;
@@ -52,7 +52,7 @@
     font-size: 1em;
 }
 
-.drag, .delete, .add {
+.drag, .delete, .add, .edit {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -123,7 +123,7 @@
     .item:hover:not(:has(.drag:active)) {
         background: var(--clr-solid);
 
-        .drag, .delete { opacity: 1; }
+        .drag, .delete, .edit { opacity: 1; }
     }
 
     .color:hover > i {
@@ -131,7 +131,7 @@
     }
 }
 
-.drag:hover > * {
+:is(.drag, .edit):hover > * {
     background: var(--clr-solid-raised);
 }
 
