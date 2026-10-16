@@ -1,3 +1,4 @@
 .title{
+    grid-area: title;
     padding: 1em;
 }

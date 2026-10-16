@@ -9,10 +9,11 @@
 }
 
 .list {
+    grid-area: input;
+
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 
     width: 100%;
     margin-top: 1em;
@@ -36,10 +37,10 @@
     transition: all var(--ani-delay);
 }
 
-.content, .drag, .delete {
-    background: transparent;
+.content, .drag, .delete, .add {
     border: none;
     outline: none;
+    background: transparent;
 }
 
 .content {
@@ -51,7 +52,7 @@
     font-size: 1em;
 }
 
-.drag, .delete {
+.drag, .delete, .add {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -74,6 +75,17 @@
         font-size: 2em;
         color: var(--clr-icon);
     }
+}
+
+.add{
+    opacity: 1;
+}
+.item:has( > .add ){
+    cursor: pointer;
+    padding-inline: 1em 0.5em;
+    margin-top: 1em;
+
+    > * { cursor: pointer; }
 }
 
 .drag {
@@ -151,4 +163,10 @@ body:has(.drag:active) {
     cursor: grabbing !important;
 
     * { pointer-events: none; }
+}
+
+@media (min-width: 1000px) {
+    .list{
+        height: 100%;
+    }
 }

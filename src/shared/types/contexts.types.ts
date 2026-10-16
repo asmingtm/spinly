@@ -5,6 +5,7 @@ export interface ContextProvider{
 }
 
 export interface OptionObject{
+    id: string;
     color: string;
     content: string;
     weight: number;

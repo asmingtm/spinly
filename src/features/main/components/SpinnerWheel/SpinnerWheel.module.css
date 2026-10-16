@@ -1,7 +1,27 @@
 .wheel{
+    grid-area: wheel;
+
     width: min(100%, 480px);
     aspect-ratio: 1 / 1;
 
     background: var(--clr-solid);
     border-radius: 50%;
+}
+
+.svg{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.disc{
+    transform-origin: 50% 50%;
+}
+
+.label{
+    fill: var(--clr-label);
+    font-size: 4px;
+    text-anchor: middle;
+    dominant-baseline: middle;
+    pointer-events: none;
 }
