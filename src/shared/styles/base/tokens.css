@@ -7,12 +7,21 @@
     --clr-solid-raised: hsl(0, 0%, 16%);
     --clr-solid-reduced: hsl(0, 0%, 4%);
 
-    --clr-primary: hsl(240, 64%, 40%);
-    --clr-primary-raised: hsl(240, 64%, 60%);
+    --clr-label: hsl(0, 0%, 100%);
+    --clr-summary: hsl(0, 0%, 75%);
+    --clr-icon: hsl(0, 0%, 50%);
 
-    --clr-accent: hsl(240, 64%, 25%);
-    --clr-accent-reduced: hsl(240, 64%, 10%);
+    --clr-primary: hsl(240, 64%, 40%);
+    --clr-primary-raised: hsl(240, 64%, 50%);
+
+    --clr-error: hsl(0, 64%, 40%);
+    --clr-error-reduced: hsl(0, 64%, 16%);
+
+    --clr-accent: hsl(240, 64%, 28%);
+    --clr-accent-reduced: hsl(240, 64%, 16%);
 
     --bdr-radius: 12px;
     --bdr-thickness: 1px;
+
+    --ani-delay: 120ms;
 }

@@ -1,0 +1,7 @@
+.wheel{
+    width: min(100%, 480px);
+    aspect-ratio: 1 / 1;
+
+    background: var(--clr-solid);
+    border-radius: 50%;
+}

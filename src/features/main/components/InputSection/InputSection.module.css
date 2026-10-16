@@ -1,0 +1,154 @@
+.title {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 0.6em;
+    padding-inline: 2em;
+
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    margin-top: 1em;
+    padding: 2em;
+
+    border-top: var(--bdr-thickness) solid var(--clr-solid);
+    list-style-type: none;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    max-width: 600px;
+
+    border: var(--bdr-thickness) dashed transparent;
+    border-radius: 99pc;
+
+    transition: all var(--ani-delay);
+}
+
+.content, .drag, .delete {
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    padding-block: 0.5em;
+    padding-inline: 0.4em;
+
+    font-size: 1em;
+}
+
+.drag, .delete {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    padding: 0.4em;
+
+    opacity: 0;
+    cursor: pointer;
+    transition: all var(--ani-delay);
+
+    * {
+        width: 100%;
+        height: 100%;
+        padding: 0.1em;
+
+        border-radius: 50%;
+        font-size: 2em;
+        color: var(--clr-icon);
+    }
+}
+
+.drag {
+    cursor: grab;
+}
+
+.delete * {
+    color: var(--clr-error);
+}
+
+.color {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 100%;
+    padding-inline: 0 0.6em;
+
+    cursor: pointer;
+
+    > .chip {
+        height: 40%;
+        aspect-ratio: 1 / 1;
+
+        border: 2px dotted transparent;
+        border-radius: 50%;
+
+        font-size: 0;
+        transition: all var(--ani-delay);
+    }
+}
+
+.list:not(:has(.drag:active)) {
+    .item:hover:not(:has(.drag:active)) {
+        background: var(--clr-solid);
+
+        .drag, .delete { opacity: 1; }
+    }
+
+    .color:hover > i {
+        border-color: var(--clr-icon);
+    }
+}
+
+.drag:hover > * {
+    background: var(--clr-solid-raised);
+}
+
+.delete:hover > * {
+    background: var(--clr-error-reduced);
+}
+
+.item:has(.content:focus) {
+    border-style: solid;
+    border-color: var(--clr-primary);
+    background: var(--clr-accent-reduced) !important;
+}
+
+.item:has(.drag:active) {
+    background: transparent;
+    border-color: var(--clr-solid);
+
+    .drag {
+        opacity: 1;
+        cursor: grabbing;
+    }
+
+    .drag > * {
+        background: var(--clr-solid);
+    }
+}
+
+body:has(.drag:active) {
+    cursor: grabbing !important;
+
+    * { pointer-events: none; }
+}

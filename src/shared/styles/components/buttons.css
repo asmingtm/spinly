@@ -1,0 +1,38 @@
+.btn{
+    --rotate: 0deg;
+
+    cursor: pointer;
+    font-size: 1em;
+    padding: 0.8em 1em;
+    min-width: 200px;
+    border-radius: var(--bdr-radius);
+    border: none;
+    transition: all var(--ani-delay);
+}
+.btn:hover{
+    scale: 1.02;
+}
+.btn:active{
+    scale: 0.96;
+    rotate: var(--rotate);
+}
+.btn:first-of-type{
+    --rotate: -1deg;
+}
+.btn:last-of-type{
+    --rotate: 1deg;
+}
+.btn-primary{
+    background: var(--clr-primary);
+}
+.btn-primary:hover{
+    background: var(--clr-primary-raised);
+}
+
+.btn-solid{
+    background: var(--clr-solid);
+}
+
+.btn-solid:hover{
+    background: var(--clr-solid-raised);
+}

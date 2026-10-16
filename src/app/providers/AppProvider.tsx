@@ -1,7 +1,10 @@
 import { Outlet } from "react-router";
+import { OptionsProvider } from "@contexts";
 
 export function AppProvider() {
     return (
-        <Outlet />
+        <OptionsProvider>
+            <Outlet />
+        </OptionsProvider>
     );
 }

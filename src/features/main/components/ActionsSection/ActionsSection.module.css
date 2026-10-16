@@ -1,0 +1,6 @@
+.actions{
+    display: flex;
+    gap: 0.8em;
+
+    margin-top: 2em;
+}

@@ -1,5 +1,6 @@
 import { PageHeader } from "@components";
 import { SpinnerWheel, ActionsSection, InputSection } from "./components";
+import "./styles/page.css";
 
 export function MainPage() {
     return (
